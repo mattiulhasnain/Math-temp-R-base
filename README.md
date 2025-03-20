@@ -1,107 +1,115 @@
-# CalcHub - Modern Calculator Tools
+# CalcHub: Advanced Mathematics Platform
 
-CalcHub is a suite of powerful, easy-to-use calculators and conversion tools designed with modern technology and functional programming principles for accuracy and reliability.
+<p align="center">
+  <img src="public/logo.png" alt="CalcHub Logo" width="180" />
+</p>
 
-![CalcHub Screenshot](https://via.placeholder.com/800x400?text=CalcHub+Modern+Calculator+Tools)
+<p align="center">
+  <strong>A comprehensive mathematics toolkit for students, professionals, and enthusiasts</strong>
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#calculators">Calculators</a> •
+  <a href="#tools">Tools</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
+
+---
+
+## Overview
+
+CalcHub is an all-in-one mathematics platform that combines various calculators, mathematical tools, and educational resources in a sleek, modern interface. From basic arithmetic to advanced calculus, from unit conversion to interactive graphing, CalcHub provides powerful tools for solving mathematical problems.
 
 ## Features
 
-### Basic Calculator
-- Perform everyday calculations with ease
-- Addition, subtraction, multiplication, and division
-- Decimal point operations
-- Clear and delete functions
-- Keyboard support for faster calculations
-- Clean, user-friendly interface
+- **Multi-purpose Calculators**: Scientific, graphing, matrix, and more
+- **Interactive Tools**: Graph plotting, equation solving, calculus operations
+- **Unit Converters**: Length, mass, temperature, area, volume, and more
+- **Mathematical Resources**: Formulas, tables, and reference materials
+- **Special Tools**: Morse code converter, prime number generator, and others
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-### Scientific Calculator
-- Advanced scientific functions
-- Trigonometry (sin, cos, tan)
-- Logarithms (log, ln)
-- Powers and roots
-- Constants (π, e)
-- Memory operations
-- Parentheses for complex expressions
-- Radians/Degrees toggle
+## Calculators
 
-### Unit Converter
-- Convert between multiple unit types:
-  - Length (meters, feet, inches, etc.)
-  - Weight (kg, pounds, ounces, etc.)
-  - Temperature (Celsius, Fahrenheit, Kelvin)
-  - Area (square meters, acres, etc.)
-  - Volume (liters, gallons, etc.)
-  - Time (seconds, minutes, hours, etc.)
-  - Speed (km/h, mph, etc.)
-- Real-time conversion
-- Clean, intuitive interface
+- 🧮 **Basic Calculator**: Simple arithmetic operations with memory functions
+- 📊 **Scientific Calculator**: Advanced functions including trigonometry, logarithms, and exponentials
+- 📈 **Graphing Calculator**: Plot functions and visualize mathematical relationships
+- 🔢 **Matrix Calculator**: Matrix operations including addition, multiplication, and inversion
+- ➗ **Fraction Calculator**: Operations with fractions and mixed numbers
+- 📱 **Programmer Calculator**: Binary, octal, decimal, and hexadecimal calculations
 
-## Technologies Used
-- HTML5
-- CSS3 with responsive design
-- JavaScript (with functional programming approach)
-- No external dependencies - pure vanilla JS
+## Tools
 
-## How to Run
+- 📐 **Equation Solver**: Solve algebraic equations and systems of equations
+- 📏 **Geometry Tools**: Calculate areas, volumes, and properties of geometric shapes
+- 📊 **Statistical Analysis**: Mean, median, mode, standard deviation, and more
+- 📖 **Formula Reference**: Comprehensive collection of mathematical formulas
+- 🔄 **Unit Converters**: Convert between different units of measurement
+- 🔍 **Number Theory**: Prime number finder, factorization, and other number properties
+- 📡 **Morse Code Converter**: Convert text to Morse code and vice versa with audio playback
 
-### Method 1: Direct Browser Opening
-Simply open the `index.html` file in any modern web browser.
+## Getting Started
 
-### Method 2: Local Server
-For the best experience, run the application using a local server:
+### Prerequisites
 
-1. If you have Node.js installed:
-   ```
-   npx http-server
+- Node.js (version 14.0.0 or higher)
+- npm (version 6.0.0 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/calchub.git
+   cd calchub
    ```
 
-2. If you have Python installed:
-   ```
-   # Python 3
-   python -m http.server
-   
-   # Python 2
-   python -m SimpleHTTPServer
+2. Install dependencies:
+   ```bash
+   npm install
    ```
 
-3. Navigate to `http://localhost:8080` (or the port shown in your terminal)
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-## Project Structure
-- `index.html` - Home page with links to all tools
-- `calculator.html` - Basic calculator page
-- `scientific-calculator.html` - Scientific calculator page
-- `converter.html` - Unit converter page
-- `script.js` - JavaScript code for the basic calculator
-- `scientific-calculator.js` - JavaScript code for the scientific calculator
-- `styles.css` - Common styles (though many styles are in-page for this project)
+4. Open your browser and navigate to `http://localhost:3000`
 
-## Functional Programming Approach
-This project uses a functional programming approach with:
-- Pure functions where possible
-- Immutable state
-- Function composition
-- Self-invoking function closures to encapsulate logic
-- Separation of concerns between UI and calculations
+### Build for Production
 
-## Responsive Design
-The application is fully responsive and works on:
-- Desktop computers
-- Tablets
-- Mobile phones
+```bash
+npm run build
+```
 
-## Browser Compatibility
-Tested and working on:
-- Chrome
-- Firefox
-- Safari
-- Edge
+## Tech Stack
+
+- **Frontend**: React, TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React Context API
+- **Routing**: React Router
+- **Math Processing**: Math.js, D3.js
+- **Build Tool**: Vite
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add some amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
 ## License
-This project is open source and available under the MIT License.
 
-## Future Improvements
-- Add more calculator types (mortgage, BMI, etc.)
-- Create a history feature to recall previous calculations
-- Add more unit conversion categories
-- Implement dark/light theme toggle
-- Add localization support for multiple languages 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+<p align="center">
+  Made with ❤️ by the CalcHub Team
+</p>
