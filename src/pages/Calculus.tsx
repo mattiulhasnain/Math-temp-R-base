@@ -67,7 +67,7 @@ const Calculus: React.FC = () => {
     ]);
     
     try {
-      const result = calculateDefiniteIntegral(function1, lower, upper, variable);
+      const result = calculateDefiniteIntegral(function1, variable, lower, upper);
       setSteps(prev => [
         ...prev,
         `Apply numerical integration over [${lowerBound}, ${upperBound}]`,

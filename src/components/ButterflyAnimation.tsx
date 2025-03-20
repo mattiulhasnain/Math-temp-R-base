@@ -156,7 +156,7 @@ const ButterflyAnimation: React.FC<ButterflyAnimationProps> = ({
         prevButterflies.map(butterfly => {
           let { 
             x, y, speed, rotation, pathProgress, xDirection, yDirection,
-            wingFlapSpeed, wingFlapDirection, pathAmplitude, pathFrequency,
+            wingFlapSpeed, pathAmplitude, pathFrequency,
             restProbability, restTimer, flutterIntensity
           } = butterfly;
           
@@ -185,7 +185,7 @@ const ButterflyAnimation: React.FC<ButterflyAnimationProps> = ({
           }
 
           // Update wing flapping animation for flying butterflies
-          let wingRotation = Math.sin(pathProgress * wingFlapSpeed) * 30 * flutterIntensity;
+          Math.sin(pathProgress * wingFlapSpeed) * 30 * flutterIntensity;
           
           // Calculate repulsion from mouse (if interactive)
           let repelX = 0;

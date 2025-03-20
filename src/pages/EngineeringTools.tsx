@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { evaluateExpression, formatNumber } from '../utils/mathFunctions';
+import { formatNumber } from '../utils/mathFunctions';
 
 type ToolType = 'ohms-law' | 'stress-strain' | 'beam-calculator' | 'unit-converter';
 

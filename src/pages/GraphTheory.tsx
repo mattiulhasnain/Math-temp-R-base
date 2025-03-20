@@ -834,6 +834,20 @@ const GraphTheory: React.FC = () => {
           <li>Use "Clear Graph" to start over</li>
         </ul>
       </div>
+
+      <div className="mt-6 bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h2 className="text-xl font-semibold mb-4">Toggle Phase</h2>
+        <button
+          onClick={togglePhase}
+          className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+            phase === 'addNodes'
+              ? 'bg-gradient-to-r from-butterfly-purple-500 to-butterfly-pink-500 text-white'
+              : 'bg-butterfly-blue-800/50 text-butterfly-blue-200 hover:bg-butterfly-blue-700/60'
+          }`}
+        >
+          {phase === 'addNodes' ? 'Switch to Add Edges' : 'Switch to Add Nodes'}
+        </button>
+      </div>
     </div>
   );
 };

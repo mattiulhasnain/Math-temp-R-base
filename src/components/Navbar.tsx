@@ -90,12 +90,6 @@ const Navbar: React.FC = () => {
     { path: '/', label: 'Home', icon: '🏠' },
   ];
 
-  const mathTools = [
-    { name: 'UI Demo', path: '/ui-demo' },
-    { name: 'Charts Demo', path: '/charts-demo' },
-    { name: 'Physics References', path: '/physics-references' }
-  ];
-
   const toggleDropdown = (id: string) => {
     setActiveDropdown(activeDropdown === id ? null : id);
   };

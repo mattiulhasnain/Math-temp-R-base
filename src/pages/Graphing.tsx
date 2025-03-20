@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Chart, registerables, ChartTypeRegistry } from 'chart.js';
+import { Chart, registerables } from 'chart.js';
 import * as math from 'mathjs';
 
 // Register Chart.js components

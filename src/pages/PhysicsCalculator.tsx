@@ -7,7 +7,7 @@ interface PhysicsFormula {
   name: string;
   formula: string;
   variables: { [key: string]: string };
-  unit: string;
+    unit: string;
 }
 
 const PhysicsCalculator: React.FC = () => {
@@ -45,7 +45,7 @@ const PhysicsCalculator: React.FC = () => {
     forces: [
       {
         name: "Newton's Second Law",
-        formula: 'F = ma',
+    formula: 'F = ma',
         variables: {
           F: 'Force (N)',
           m: 'Mass (kg)',
@@ -65,8 +65,8 @@ const PhysicsCalculator: React.FC = () => {
       }
     ],
     energy: [
-      {
-        name: 'Kinetic Energy',
+  {
+    name: 'Kinetic Energy',
         formula: 'KE = (1/2)mv²',
         variables: {
           KE: 'Kinetic Energy (J)',
@@ -74,10 +74,10 @@ const PhysicsCalculator: React.FC = () => {
           v: 'Velocity (m/s)'
         },
         unit: 'J'
-      },
-      {
-        name: 'Potential Energy',
-        formula: 'PE = mgh',
+  },
+  {
+    name: 'Potential Energy',
+    formula: 'PE = mgh',
         variables: {
           PE: 'Potential Energy (J)',
           m: 'Mass (kg)',
@@ -88,8 +88,8 @@ const PhysicsCalculator: React.FC = () => {
       }
     ],
     waves: [
-      {
-        name: 'Wave Speed',
+  {
+    name: 'Wave Speed',
         formula: 'v = fλ',
         variables: {
           v: 'Wave speed (m/s)',
@@ -183,7 +183,7 @@ const PhysicsCalculator: React.FC = () => {
                 </button>
               ))}
             </div>
-          </div>
+        </div>
 
           {/* Formula Selection */}
           <div className="bg-butterfly-blue-900/30 p-6 rounded-xl backdrop-blur-sm border border-butterfly-blue-700/50">
@@ -220,40 +220,40 @@ const PhysicsCalculator: React.FC = () => {
                     <div key={variable}>
                       <label className="block text-sm font-medium text-gray-300 mb-1">
                         {description}
-                      </label>
-                      <input
-                        type="number"
+              </label>
+                <input
+                  type="number"
                         value={variables[variable] || ''}
                         onChange={(e) => handleVariableChange(variable, e.target.value)}
                         className="w-full px-4 py-2 rounded-lg bg-butterfly-blue-800/50 border border-butterfly-blue-700/50 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-butterfly-purple-500"
                         placeholder="Enter value"
                         step="any"
                       />
-                    </div>
-                  ))}
-              </div>
+            </div>
+          ))}
+        </div>
 
               {/* Calculate Button */}
-              <button
-                onClick={calculateResult}
+        <button
+          onClick={calculateResult}
                 className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-butterfly-purple-500 to-butterfly-pink-500 text-white font-medium transition-all duration-200 hover:from-butterfly-purple-600 hover:to-butterfly-pink-600"
-              >
-                Calculate
-              </button>
+        >
+          Calculate
+        </button>
 
               {/* Result */}
               {result && (
                 <div className="mt-4 p-4 bg-butterfly-blue-800/50 rounded-lg">
                   <div className="text-sm text-gray-300">Result:</div>
                   <div className="text-2xl font-bold text-white">{result}</div>
-                </div>
-              )}
+          </div>
+        )}
 
               {/* Error */}
               {error && (
                 <div className="mt-4 p-4 bg-red-900/50 text-red-200 rounded-lg">
                   {error}
-                </div>
+            </div>
               )}
             </div>
           ) : (

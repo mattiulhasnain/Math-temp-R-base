@@ -99,7 +99,7 @@ const Toast: React.FC<ToastProps> = ({
   return (
     <div 
       className={`
-        max-w-xs w-full bg-butterfly-blue-900/90 backdrop-blur-sm shadow-lg rounded-lg pointer-events-auto 
+        max-w-xs w-full ${bgColorByType[type]} backdrop-blur-sm shadow-lg rounded-lg pointer-events-auto 
         border border-butterfly-blue-700/50 overflow-hidden transition-all duration-300 transform
         ${visible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}
       `}

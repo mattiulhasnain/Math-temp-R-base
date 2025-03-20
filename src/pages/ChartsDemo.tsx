@@ -3,7 +3,7 @@ import {
   LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart, Pie, ScatterChart, Scatter,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
-  ComposedChart, Treemap, RadialBarChart, RadialBar
+  ComposedChart, Treemap, RadialBarChart, RadialBar, Cell
 } from 'recharts';
 
 const ChartsDemo: React.FC = () => {
@@ -290,7 +290,7 @@ const ChartsDemo: React.FC = () => {
                     nameKey="name"
                     label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
                   >
-                    {pieData.map((entry, index) => (
+                    {pieData.map((_, index) => (
                       <Cell
                         key={`cell-${index}`}
                         fill={
