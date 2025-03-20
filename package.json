@@ -1,0 +1,40 @@
+{
+  "name": "calchub",
+  "version": "4.0.0",
+  "description": "Advanced Mathematics Made Simple",
+  "main": "src/scripts/main.tsx",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "setup": "node setup.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "chart.js": "^4.4.1",
+    "mathjs": "^11.8.0",
+    "react": "^19.0.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "recharts": "^2.15.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}
